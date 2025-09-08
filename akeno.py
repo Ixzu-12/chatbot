@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("api-key")
 
-openai.api_base = "https://openrouter.ai/api/v1"
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 
@@ -73,6 +72,7 @@ while True:
     except Exception as e:
         print("Akeno: Oops, something went wrong! 💔")
         print("Error:", e)
+
 
 
 
